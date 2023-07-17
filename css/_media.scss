@@ -1,0 +1,47 @@
+@media(max-width:375px){
+    body{
+        height: auto;
+        padding-top: 50px;
+    }
+    .header__logo{
+        margin-bottom: 40px;
+    }
+    .tip{
+        flex-direction: column;
+        min-height: 789px;
+        align-items: center;
+        padding: 32px;
+
+        &__precentage-inner{
+            width: 311px;
+        }
+
+        &__select-button{
+            width: 146px;
+        }
+
+        &__inner-right{
+            height: 257px;
+            width: 327px;
+            min-height: auto;
+            padding: 24px;
+            padding-top: 37px;
+        }
+
+        &__result-split{
+            font-size: 32px;
+        }
+
+        &__amount-inner{
+            margin-bottom: 20px;
+        }
+
+        &__amount-inner:nth-child(2) {
+            margin-bottom: 32px;
+        }
+
+        #reset{
+            width: 281px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <img src="./images/logo.svg" alt="" class="header__logo">
+  <div class="tip">
+    <div class="tip__inner-left">
+      <div class="tip__inner">
+        <div class="label__inner">
+          <label for="bill">Bill</label>
+          <label for="bill" id="error">Can’t be zero</label>
+        </div>
+        <input type="text" id="bill" class="tip__input">
+      </div>
+      <div class="tip__precentage-inner">
+        <legend>Select Tip %</legend>
+        <button class="tip__select-button" id="tip5">5%</button>
+        <button class="tip__select-button" id="tip10">10%</button>
+        <button class="tip__select-button" id="tip15">15%</button>
+        <button class="tip__select-button" id="tip25">25%</button>
+        <button class="tip__select-button" id="tip50">50%</button>
+        <input class="tip__select-button" id="custom" placeholder="Custom"></input>
+      </div>
+      <div class="tip__inner">
+        <div class="label__inner">
+          <label for="numberPeople">Number of People</label>
+          <label for="bill" id="error">Can’t be zero</label>
+        </div>
+        <input type="text" id="numberPeople" class="tip__input">
+      </div>
+    </div>
+    <div class="tip__inner-right">
+      <div class="tip__result">
+        <div class="tip__amount-inner">
+          <p class="tip__result-text">Tip Amount<br><span>/ person</span></p>
+          <p class="tip__result-split" id="tipAmount"></p>
+        </div>
+        <div class="tip__amount-inner">
+          <p class="tip__result-text">Total<br><span>/ person</span></p>
+          <p class="tip__result-split" id="total"></p>
+        </div>
+      </div>
+      <button id="reset">reset</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #C5E4E7;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}

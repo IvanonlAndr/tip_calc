@@ -1,0 +1,206 @@
+.header__logo {
+    margin-bottom: 87px;
+}
+
+.tip {
+    max-width: 920px;
+    width: 100%;
+    min-height: 481px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px 32px 48px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .label__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        color: #5E7A7D;
+        position: relative;
+    }
+
+    #error{
+        position: static;
+        color:  #E17457;
+        display: none;
+    }
+
+    &__input {
+        border-radius: 5px;
+        background-color: #F3F9FA;
+        border: none;
+        outline: none;
+        max-width: 379px;
+        width: 100%;
+        height: 48px;
+        position: relative;
+        text-align: right;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Space Mono';
+        color: #00474B;
+        padding-right: 17px;
+    }
+
+    &__input:hover {
+        border: 2px solid #26C2AE;
+    }
+
+    #bill {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    label::before {
+        position: absolute;
+        content: '';
+        left: 17px;
+        top: 45px;
+        z-index: 1000;
+        background-position: center center;
+    }
+
+    label[for=bill]::before {
+        background-image: url(../images/icon-dollar.svg);
+        width: 9px;
+        height: 15px;
+    }
+
+    label[for=numberPeople]::before {
+        background-image: url(../images/icon-person.svg);
+        width: 13px;
+        height: 16px;
+    }
+
+    #error::before{
+        display: none;
+        position: static;
+    }
+
+    legend {
+        color: #5E7A7D;
+        margin-bottom: 16px;
+    }
+
+    &__precentage-inner {
+        max-width: 379px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    &__select-button {
+        width: 117px;
+        height: 48px;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #00474B;
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 24px;
+        font-family: 'Space Mono';
+    }
+
+    &__select-button:hover {
+        background-color: #9FE8DF;
+        color: #00474B;
+    }
+
+    .active {
+        background-color: #26C2AE;
+        color: #00474B;
+    }
+
+    #custom {
+        background: #F3F9FA;
+        text-align: right;
+        color: #00474B;
+        padding-left: 13px;
+        padding-right: 13px;
+
+    }
+
+    #custom:hover{
+        border: 2px solid #26C2AE;
+    }
+
+    #custom:focus {
+        border: 2px solid #26C2AE;
+    }
+
+    #custom:focus textarea {
+        background-color: red;
+    }
+
+    #custom::placeholder {
+        color: #00474B;
+        text-align: center;
+    }
+
+    &__inner-right {
+        max-width: 413px;
+        width: 100%;
+        min-height: 417px;
+        border-radius: 15px;
+        background-color: #00474B;
+        padding: 40px;
+    }
+
+    &__amount-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 333px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    &__amount-inner:nth-child(2) {
+        margin-bottom: 122px;
+    }
+
+    &__result-text {
+        color: #fff;
+    }
+
+    span {
+        color: #7F9D9F;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    &__result-split {
+        color: #26C2AE;
+        font-size: 48px;
+        letter-spacing: -1px;
+    }
+
+    #reset {
+        width: 333px;
+        height: 48px;
+        color: #00474B;
+        background-color: #26C2AE;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+
+    #reset:hover {
+        background-color: #9FE8DF;
+    }
+}
+
+@import "global";
+@import "media";
